@@ -1,0 +1,31 @@
+{
+  "name": "prueba-rappi",
+  "version": "0.0.1",
+  "description": "Prueba técnica para Rappi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev",
+    "prod": "gulp prod && browserify src/js/app.js -g [envify --NODE_ENV 'production'] -t [ babelify --presets [ react ] ]| uglifyjs -c -m > dist/js/app.js"
+  },
+  "author": "Rafael Poveda",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "normalize": "^0.3.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "envify": "^3.4.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-minify": "0.0.12",
+    "gulp-sass": "^2.3.2",
+    "normalize.css": "^4.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
